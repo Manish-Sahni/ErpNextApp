@@ -1,0 +1,73 @@
+2023-03-26 05:08:48,163 DEBUG cd frappe_v14 && python3 -m venv env
+2023-03-26 05:08:50,341 DEBUG cd frappe_v14 && /home/manny/Desktop/script_test/frappe_v14/env/bin/python -m pip install --quiet --upgrade pip
+2023-03-26 05:08:51,747 DEBUG cd frappe_v14 && /home/manny/Desktop/script_test/frappe_v14/env/bin/python -m pip install --quiet wheel
+2023-03-26 05:08:53,136 LOG Getting frappe
+2023-03-26 05:08:53,136 DEBUG cd frappe_v14/apps && git clone https://github.com/frappe/frappe.git --branch v14.29.1 --depth 1 --origin upstream
+2023-03-26 05:09:02,685 LOG Installing frappe
+2023-03-26 05:09:02,685 DEBUG cd /home/manny/Desktop/script_test/frappe_v14 && /home/manny/Desktop/script_test/frappe_v14/env/bin/python -m pip install --quiet --upgrade -e /home/manny/Desktop/script_test/frappe_v14/apps/frappe 
+2023-03-26 05:09:47,092 DEBUG cd /home/manny/Desktop/script_test/frappe_v14/apps/frappe && yarn install
+2023-03-26 05:09:54,829 DEBUG cd /home/manny/Desktop/script_test/frappe_v14 && sudo supervisorctl restart frappe:
+2023-03-26 05:09:54,967 WARNING cd /home/manny/Desktop/script_test/frappe_v14 && sudo supervisorctl restart frappe: executed with exit code 2
+2023-03-26 05:09:54,967 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-03-26 05:09:54,967 DEBUG cd frappe_v14 && bench build
+2023-03-26 05:09:55,036 INFO /home/manny/.local/bin/bench build
+2023-03-26 05:10:08,741 LOG setting up backups
+2023-03-26 05:10:08,744 LOG backups were set up
+2023-03-26 05:10:08,744 INFO Bench frappe_v14 initialized
+2023-03-26 05:10:09,023 INFO /home/manny/.local/bin/bench get-app erpnext --branch v14.19.0
+2023-03-26 05:10:09,613 LOG Getting erpnext
+2023-03-26 05:10:09,614 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch v14.19.0 --depth 1 --origin upstream
+2023-03-26 05:10:31,986 LOG Installing erpnext
+2023-03-26 05:10:32,062 DEBUG cd /home/manny/Desktop/script_test/frappe_v14 && /home/manny/Desktop/script_test/frappe_v14/env/bin/python -m pip install --quiet --upgrade -e /home/manny/Desktop/script_test/frappe_v14/apps/erpnext 
+2023-03-26 05:10:39,463 DEBUG cd /home/manny/Desktop/script_test/frappe_v14/apps/erpnext && yarn install
+2023-03-26 05:10:39,808 DEBUG bench build --app erpnext
+2023-03-26 05:10:39,877 INFO /home/manny/.local/bin/bench build --app erpnext
+2023-03-26 05:10:45,454 DEBUG cd /home/manny/Desktop/script_test/frappe_v14 && sudo supervisorctl restart frappe:
+2023-03-26 05:10:45,592 WARNING cd /home/manny/Desktop/script_test/frappe_v14 && sudo supervisorctl restart frappe: executed with exit code 2
+2023-03-26 05:10:45,592 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-03-26 05:11:08,228 INFO /home/manny/.local/bin/bench new-site erp.com
+2023-03-26 05:12:31,611 INFO /home/manny/.local/bin/bench new-site erp.com
+2023-03-26 05:12:36,289 INFO /home/manny/.local/bin/bench new-site erp1.com
+2023-03-26 05:13:27,663 INFO /home/manny/.local/bin/bench use erp1.com
+2023-03-26 05:13:48,550 INFO /home/manny/.local/bin/bench --site erp1.com erpnext
+2023-03-26 05:13:54,833 INFO /home/manny/.local/bin/bench --site erp1.com install-app erpnext
+2023-03-26 05:15:19,337 INFO /home/manny/.local/bin/bench start
+2023-03-26 05:15:19,518 INFO /home/manny/.local/bin/bench watch
+2023-03-26 05:15:19,547 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 05:15:19,551 INFO /home/manny/.local/bin/bench worker
+2023-03-26 05:15:19,554 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 05:18:33,717 INFO /home/manny/.local/bin/bench --help
+2023-03-26 05:18:44,539 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:19:00,604 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:19:24,854 INFO /home/manny/.local/bin/bench ngrok ---help
+2023-03-26 05:19:29,643 INFO /home/manny/.local/bin/bench ngrok 8080
+2023-03-26 05:19:32,477 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:20:47,367 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:21:19,555 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:28:21,657 INFO /home/manny/.local/bin/bench ngrok
+2023-03-26 05:28:29,136 INFO /home/manny/.local/bin/bench start
+2023-03-26 05:28:29,326 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 05:28:29,327 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 05:28:29,359 INFO /home/manny/.local/bin/bench watch
+2023-03-26 05:28:29,359 INFO /home/manny/.local/bin/bench worker
+2023-03-26 05:33:46,998 INFO /home/manny/.local/bin/bench start
+2023-03-26 05:33:47,192 INFO /home/manny/.local/bin/bench watch
+2023-03-26 05:33:47,193 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 05:33:47,223 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 05:33:47,225 INFO /home/manny/.local/bin/bench worker
+2023-03-26 06:00:01,860 INFO /home/manny/.local/bin/bench --verbose --site all backup
+2023-03-26 06:20:33,284 INFO /home/manny/.local/bin/bench start
+2023-03-26 06:20:33,490 INFO /home/manny/.local/bin/bench worker
+2023-03-26 06:20:33,525 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 06:20:33,525 INFO /home/manny/.local/bin/bench watch
+2023-03-26 06:20:33,526 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 06:22:58,766 INFO /home/manny/.local/bin/bench start
+2023-03-26 06:22:58,989 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 06:22:58,993 INFO /home/manny/.local/bin/bench worker
+2023-03-26 06:22:59,016 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 06:22:59,019 INFO /home/manny/.local/bin/bench watch
+2023-03-26 06:41:18,168 INFO /home/manny/.local/bin/bench start
+2023-03-26 06:41:18,362 INFO /home/manny/.local/bin/bench watch
+2023-03-26 06:41:18,368 INFO /home/manny/.local/bin/bench schedule
+2023-03-26 06:41:18,393 INFO /home/manny/.local/bin/bench serve --port 8000
+2023-03-26 06:41:18,398 INFO /home/manny/.local/bin/bench worker
